@@ -1,0 +1,28 @@
+version: "3"
+
+tasks:
+  build:
+    desc: build docker images
+    cmds:
+      - docker compose build --no-cache --force-rm
+  up:
+    desc: up docker containers
+    cmds:
+      - docker compose up -d
+  down:
+    desc: down docker containers
+    cmds:
+      - docker compose down --remove-orphans
+  down-v:
+    desc: down docker containers and remove volumes
+    cmds:
+      - docker compose down --remove-orphans --volumes
+  stop:
+    desc: stop docker containers
+    cmds:
+      - docker compose stope
+  restart:
+    desc: restart docker containers
+    cmds:
+      - task: down
+      - task: up
