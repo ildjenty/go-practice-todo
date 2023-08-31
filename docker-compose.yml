@@ -13,6 +13,13 @@ services:
     depends_on:
       - pg
     tty: true
+    environment:
+      - DB_HOSTNAME=pg
+      - DB_PORT=5432
+      - DB_NAME=${DB_NAME}
+      - DB_USERNAME=${DB_USERNAME}
+      - DB_PASSWORD=${DB_PASSWORD}
+      - DB_TZ=Asia/Tokyo
   pg:
     platform: linux/amd64
     build:

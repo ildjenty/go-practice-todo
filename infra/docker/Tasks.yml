@@ -26,3 +26,7 @@ tasks:
     cmds:
       - task: down
       - task: up
+  server-sh:
+    desc: server container terminal
+    cmds:
+      - docker compose exec server sh

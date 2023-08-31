@@ -18,6 +18,7 @@
     "clsx",
     "cmds",
     "dotenv",
+    "gorm",
     "hookform",
     "hygen",
     "labstack",
@@ -28,7 +29,8 @@
     "taskfile",
     "tsnd",
     "typegen",
-    "ulidx"
+    "ulidx",
+    "varchar"
   ],
   "files.associations": {
     "*.css": "tailwindcss"
