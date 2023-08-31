@@ -1,4 +1,4 @@
-module github.com/ildjenty/go-practice-todo
+module app
 
 go 1.21.0
 
